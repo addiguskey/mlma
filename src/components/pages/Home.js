@@ -5,6 +5,10 @@ import ContactForm from "../contactForm";
 // import stamp from "../../assets/images/stamp.png";
 // import code from "../../assets/images/code.png";
 import fillerimg from "../../assets/images/filler.png";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
+
 const styles = {
   img: {
     maxHeight: "auto",
@@ -68,7 +72,10 @@ export default function Home() {
         <div className="row d-flex align-items-center">
           <div className="col col-md-4 col-lg-4 col-sm-4">
             <div className="card bg-dark text-white" style={styles.cards}>
-              <img className="card-img" src={fillerimg} alt="..." />
+              <Link to="/whatweoffer" className="btn btn-dark">
+                <img className="card-img" src={fillerimg} alt="..." />
+              </Link>
+
               <div className="card-img-overlay">
                 <h5 className="card-title align-text-bottom">Card title</h5>
 
@@ -80,27 +87,59 @@ export default function Home() {
           </div>
           <div className="col col-md-4 col-lg-4 col-sm-4">
             <div className="card bg-dark text-white" style={styles.cards}>
-              <img className="card-img" src={fillerimg} alt="..." />
+              <Link to="/whatweoffer" className="btn btn-dark">
+                <img className="card-img" src={fillerimg} alt="..." />
+              </Link>
+
               <div className="card-img-overlay">
                 <h5 className="card-title align-text-bottom">Card title</h5>
-
-                <a href="#" className="btn btn-primary">
-                  Learn More
-                </a>
               </div>
             </div>
           </div>
           <div className="col col-xl-4 col-md-4 col-lg-4 col-sm-4">
             <div className="card bg-dark text-white" style={styles.cards}>
-              <img className="card-img" src={fillerimg} alt="..." />
+              <Link to="/whatweoffer" className="btn btn-dark">
+                <img className="card-img" src={fillerimg} alt="..." />
+              </Link>
+
               <div className="card-img-overlay">
                 <h5 className="card-title align-text-bottom">Card title</h5>
-
-                <a href="#" className="btn btn-primary">
-                  Learn More
-                </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      {/*  */}
+      <div className="d-flex flex-column">
+        <div className="row">
+          <div className="col">
+            <Card className="text-center">
+              <Card.Header>LIMITED TIME SPECIAL</Card.Header>
+              <Card.Body>
+                <Card.Title>
+                  Get Your 1st Month of UNLIMITED class for only $99!
+                </Card.Title>
+                <Card.Text>Uniform INCLUDED</Card.Text>
+                <Link to="/contact" className="btn btn-dark">
+                  Learn More
+                </Link>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col">
+            <Card className="text-center">
+              <Card.Header>FEATURED</Card.Header>
+              <Card.Body>
+                <Card.Title className="">
+                  Come on by or Join Us for Upcoming Events!
+                </Card.Title>
+                <Card.Text>Programs for ALL ages</Card.Text>
+
+                <Link to="/calendar" className="btn btn-dark">
+                  Learn More
+                </Link>
+              </Card.Body>
+            </Card>
           </div>
         </div>
       </div>
