@@ -14,7 +14,13 @@ const styles = {
     marginTop: "2rem",
   },
   phoneNum: {
-    marginLeft: "47.9%",
+    marginLeft: "50%",
+  },
+  p: {
+    marginTop: "1rem",
+  },
+  bold: {
+    fontWeight: "bold",
   },
 };
 export default function Footer() {
@@ -25,10 +31,16 @@ export default function Footer() {
           <div className="d-flex col align-items-center mx-5">
             <img src={logo} style={styles.footImg} />
           </div>
-          <div className="d-flex col align-items-center justify-content-end mx-5">
+          <div
+            className="d-flex col align-items-center justify-content-end mx-4
+          "
+          >
             <h6 style={styles.info}>
               <span style={styles.phoneNum}>CALL US: (618) 726 - 2228</span>
-              <br></br>1931 W. US Highway 50, Fairview Heights, IL, 62208
+              <br></br>
+              <span style={styles.bold}>
+                1931 W. US Highway 50, Fairview Heights, IL, 62208
+              </span>
             </h6>
           </div>
         </div>
@@ -37,7 +49,7 @@ export default function Footer() {
           className="footerContainer align-items-center text-center"
           style={styles.foot}
         >
-          <p style={{ padding: "1rem" }}>
+          <p style={styles.p}>
             Website Designed and Built by addileeg©<br></br>
             <span style={{ fontSize: "0.8rem" }}>addisonguskey@gmail.com</span>
           </p>

@@ -21,6 +21,7 @@ const styles = {
   },
   li: {
     listStyle: "none",
+    textDecoration: "none",
   },
 };
 export default function Navbar() {
@@ -51,7 +52,7 @@ export default function Navbar() {
           <div className="d-flex flex-column align-items-end">
             <MDBCollapse show={showAnimated}>
               <div className="bg-light shadow-3 p-4">
-                <ul style={styles.li}>
+                <ul style={styles.li} id="navMenu">
                   <li>
                     <Link
                       to="/about"

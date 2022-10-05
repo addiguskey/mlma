@@ -18,15 +18,36 @@ const styles = {
   title: {
     fontSize: "200%",
   },
-  formBox: {
+  black: {
     backgroundColor: "black",
     color: "white",
   },
   span: {
     fontWeight: "bold",
   },
-  cards: {
+  classCards: {
     borderRadius: "0mm",
+  },
+  classImg: {
+    height: "30rem",
+  },
+  red: {
+    backgroundColor: "#e24d24",
+    color: "white",
+  },
+  blue: {
+    backgroundColor: "#2b5f8d",
+    color: "white",
+  },
+  textshadow: {
+    color: "white",
+    fontWeight: "bold",
+    textShadow: "1px 1px 1px red",
+  },
+  redtext: {
+    color: "#e24d24",
+    fontWeight: "bold",
+    textShadow: "1px 1px 1px black",
   },
 };
 export default function Home() {
@@ -42,8 +63,8 @@ export default function Home() {
   };
   return (
     <div>
-      <div className="nav d-flex flex-column">
-        <div className="container align-itmes-center text-center">
+      <div className="nav d-flex flex-column" style={styles.black}>
+        <div className="container align-itmes-center text-center my-5">
           <img src={homeimg} style={styles.img}></img>
           <div className="home-title">
             <h2 style={styles.title}>OLYMPIC STYLE TAEKWONDO</h2>
@@ -55,10 +76,10 @@ export default function Home() {
       <div
         className=" d-flex flex-column p-4"
         id="formContainer"
-        style={styles.formBox}
+        style={styles.red}
       >
         <h1 className="text-center p-1">
-          fill out the form for a <span>FREE CLASS</span> !
+          Claim Your <span>FREE CLASS</span> !
         </h1>
         <ContactForm
           openMsgMadolFunc={openMsgMadolFunc}
@@ -66,29 +87,19 @@ export default function Home() {
         />
       </div>
       <div
-        className="d-flex felx-column p-3 align-items-center justify-content-around"
+        className="d-flex felx-column align-items-center "
         id="programPics"
+        style={styles.black}
       >
         <div className="row d-flex align-items-center">
-          <div className="col col-md-4 col-lg-4 col-sm-4">
-            <div className="card bg-dark text-white" style={styles.cards}>
+          <div className="col col-md-3 col-lg-3 col-sm-3">
+            <div className="card bg-dark text-white">
               <Link to="/whatweoffer" className="btn btn-dark">
-                <img className="card-img" src={fillerimg} alt="..." />
-              </Link>
-
-              <div className="card-img-overlay">
-                <h5 className="card-title align-text-bottom">Card title</h5>
-
-                <a href="#" className="btn btn-primary">
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-md-4 col-lg-4 col-sm-4">
-            <div className="card bg-dark text-white" style={styles.cards}>
-              <Link to="/whatweoffer" className="btn btn-dark">
-                <img className="card-img" src={fillerimg} alt="..." />
+                <img
+                  className="card-img"
+                  src={fillerimg}
+                  style={styles.classImg}
+                />
               </Link>
 
               <div className="card-img-overlay">
@@ -96,10 +107,44 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col col-xl-4 col-md-4 col-lg-4 col-sm-4">
-            <div className="card bg-dark text-white" style={styles.cards}>
+          <div className="col col-md-3 col-lg-3 col-sm-3">
+            <div className="card bg-dark text-white">
               <Link to="/whatweoffer" className="btn btn-dark">
-                <img className="card-img" src={fillerimg} alt="..." />
+                <img
+                  className="card-img"
+                  src={fillerimg}
+                  style={styles.classImg}
+                />
+              </Link>
+
+              <div className="card-img-overlay">
+                <h5 className="card-title align-text-bottom">Card title</h5>
+              </div>
+            </div>
+          </div>
+          <div className="col col-xl-3 col-md-3 col-lg-3 col-sm-3">
+            <div className="card bg-dark text-white">
+              <Link to="/whatweoffer" className="btn btn-dark">
+                <img
+                  className="card-img"
+                  src={fillerimg}
+                  style={styles.classImg}
+                />
+              </Link>
+
+              <div className="card-img-overlay">
+                <h5 className="card-title align-text-bottom">Card title</h5>
+              </div>
+            </div>
+          </div>
+          <div className="col col-xl-3 col-md-3 col-lg-3 col-sm-3">
+            <div className="card bg-dark text-white">
+              <Link to="/whatweoffer" className="btn btn-dark">
+                <img
+                  className="card-img"
+                  src={fillerimg}
+                  style={styles.classImg}
+                />
               </Link>
 
               <div className="card-img-overlay">
@@ -110,15 +155,33 @@ export default function Home() {
         </div>
       </div>
       {/*  */}
-      <div className="d-flex flex-column">
+      <div className="d-flex flex-column p-4" style={styles.blue}>
         <div className="row">
-          <div className="col">
-            <Card className="text-center">
-              <Card.Header>LIMITED TIME SPECIAL</Card.Header>
+          <div className="col p-1 my-5">
+            <Card
+              className="text-center bg-transparent border-0"
+              style={styles.dealsCards}
+            >
+              <h6>FEATURED</h6>
               <Card.Body>
-                <Card.Title>
-                  Get Your 1st Month of UNLIMITED class for only $99!
+                <Card.Title className="" style={styles.span}>
+                  Come on by or JOIN US for Upcoming Events!
                 </Card.Title>
+                <Card.Text>Programs for All ages</Card.Text>
+
+                <Link to="/calendar" className="btn btn-dark">
+                  Learn More
+                </Link>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col p-1">
+            <Card className="text-center bg-transparent border-0">
+              <h5 style={styles.redtext}>LIMITED TIME SPECIAL</h5>
+              <Card.Body>
+                <h2 style={styles.textshadow}>
+                  1st Month of UNLIMITED class for only $99!
+                </h2>
                 <Card.Text>Uniform INCLUDED</Card.Text>
                 <Link to="/contact" className="btn btn-dark">
                   Learn More
@@ -126,14 +189,17 @@ export default function Home() {
               </Card.Body>
             </Card>
           </div>
-          <div className="col">
-            <Card className="text-center">
-              <Card.Header>FEATURED</Card.Header>
+          <div className="col p-1 my-5">
+            <Card
+              className="text-center bg-transparent border-0"
+              style={styles.dealsCards}
+            >
+              <h6>FEATURED</h6>
               <Card.Body>
-                <Card.Title className="">
-                  Come on by or Join Us for Upcoming Events!
+                <Card.Title className="" style={styles.span}>
+                  Come on by or JOIN US for Upcoming Events!
                 </Card.Title>
-                <Card.Text>Programs for ALL ages</Card.Text>
+                <Card.Text>Programs for All ages</Card.Text>
 
                 <Link to="/calendar" className="btn btn-dark">
                   Learn More
