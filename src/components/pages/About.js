@@ -3,6 +3,7 @@ import { Tab, Tabs, Row, Col, Nav } from "react-bootstrap";
 import Values from "../About/Values";
 import Instructors from "../About/Instructors";
 import Facility from "../About/Facility";
+import WhoAreWe from "../About/WhoAreWe";
 
 const styles = {
   tab: {
@@ -20,6 +21,9 @@ export default function About() {
           justify
           style={styles.tab}
         >
+          <Tab eventKey="whoarewe" title="Who Are We">
+            <WhoAreWe />
+          </Tab>
           <Tab eventKey="values" title="Values">
             <Values />
           </Tab>

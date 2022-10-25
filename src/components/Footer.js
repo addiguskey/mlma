@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
+import { Link, useLocation } from "react-router-dom";
 
 const styles = {
   foot: {
@@ -7,8 +8,8 @@ const styles = {
     color: "white",
   },
   footImg: {
-    maxHeight: "60%",
-    maxWidth: "60%",
+    maxHeight: "50%",
+    maxWidth: "50%",
   },
   info: {
     marginTop: "2rem",
@@ -29,7 +30,9 @@ export default function Footer() {
       <div className="d-flex flex-column">
         <div className="row justify-content-between">
           <div className="d-flex col align-items-center mx-5">
-            <img src={logo} style={styles.footImg} />
+            <Link to="/">
+              <img src={logo} style={styles.footImg} />
+            </Link>
           </div>
           <div
             className="d-flex col align-items-center justify-content-end mx-4

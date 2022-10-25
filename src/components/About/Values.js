@@ -7,41 +7,44 @@ const styles = {
     color: "white",
     fontWeight: "bold",
   },
+  span: {
+    fontWeight: "bold",
+    fontSize: "1.2rem",
+  },
 };
 export default function Values() {
   return (
     <div>
       <div className="card p-2 align-items-center border-0">
-        <h1 eventKey="values"> Our Values</h1>
+        <h1 eventKey="values"> 충효예의</h1>
         <div className="d-flex flex-column text-center" style={styles.card}>
           <div className="row align-items-center ">
             <div className="col p-2 mx-5">
               <p>
-                Teaching Korean Style Martial Arts with an emphasis on character
-                development, fitness and self-defense. We are a family martial
-                arts school. We offer programs for children, teens, adults, and
-                seniors.{" "}
+                Master Lim's Martial Arts Academy is OUR facility where students
+                learn patriotism, parental respect and obedience, righteousness
+                and loyalty. We are learning and training ourselves from a
+                family like environment.
               </p>
-              <p>
-                Master Lim’s Martial Arts offers Tae Kwon Do, Grappling,
-                Self-Defense, Sword Skills and other weapons, break falls, and
-                hand to hand combat.
-              </p>
-              <p>
-                Our students will learn respect and good manners,
-                self-discipline, a positive attitude, responsibility,
-                concentration, self-esteem, flexibility, endurance, and
-                strength.{" "}
-              </p>
-              <p>
-                Martial Arts is beneficial for relieving stress and tension and
-                it also enhances overall wellness and will help with weight
-                control.
-              </p>
-              <p>
-                We are positive, family-friendly environment that accommodates
-                and welcomes all ages.
-              </p>
+              <div className="d-flex flex-column text-left">
+                <p>
+                  {" "}
+                  <span style={styles.span}>충(Choong)</span>: Love our country.
+                </p>
+                <p>
+                  <span style={styles.span}>효(Hyo)</span>: Love, care, and
+                  respect our parents and grand parents.
+                </p>
+                <p>
+                  <span style={styles.span}>예(Ye)</span>: Practice respect and
+                  manner.
+                </p>
+                <p>
+                  <span style={styles.span}>의(Eu)</span>: Be honest and have a
+                  good relationship among all people. Make smart decisions and
+                  be responsible.
+                </p>
+              </div>
             </div>
             <div className="col">
               <img src={valueImg}></img>
