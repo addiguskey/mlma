@@ -34,12 +34,22 @@ export default function Footer() {
               <img src={logo} style={styles.footImg} />
             </Link>
           </div>
+          <div className="d-flex col align-items-center mx-5 my-4 p-2">
+            {/* <h6>
+              <span>MON - FRI : 4:15 PM - 8:00 PM</span> <br></br>
+              <span>SAT : 9:00 AM - 10:00 AM</span> <br></br>
+              <p>
+                **Private Lesson is available by appointment. <br></br> See
+                "Calendar" page for monthly schedule
+              </p>
+            </h6> */}
+          </div>
           <div
             className="d-flex col align-items-center justify-content-end mx-4
           "
           >
             <h6 style={styles.info}>
-              <span style={styles.phoneNum}>CALL US: (618) 726 - 2228</span>
+              <span style={styles.phoneNum}>(618) 726 - 2228</span>
               <br></br>
               <span style={styles.bold}>
                 1931 W. US Highway 50, Fairview Heights, IL, 62208

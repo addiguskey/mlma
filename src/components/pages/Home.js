@@ -44,6 +44,11 @@ const styles = {
     fontWeight: "bold",
     textShadow: "1px 1px 1px red",
   },
+  textshadow2: {
+    color: "#e24d24",
+    fontWeight: "bold",
+    textShadow: "1px 1px 1px black",
+  },
   redtext: {
     color: "#e24d24",
     fontWeight: "bold",
@@ -73,7 +78,7 @@ export default function Home() {
             <h2 style={styles.title}>OLYMPIC STYLE TAEKWONDO</h2>
             <h1>&</h1>
             <h2>KOREAN SWORD MARTIAL ARTS</h2>
-            <h5>for you and your family</h5>
+            <h5 style={styles.textshadow2}>FOR YOU AND YOUR FAMILY</h5>
           </div>
         </div>
       </div>
