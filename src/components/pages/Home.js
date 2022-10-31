@@ -8,6 +8,7 @@ import fillerimg from "../../assets/images/filler.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
+import Testimonials from "../Testimonials/Testimonials";
 
 const styles = {
   img: {
@@ -222,6 +223,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <Testimonials></Testimonials>
       </div>
     </div>
   );

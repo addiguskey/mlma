@@ -80,7 +80,7 @@ export default function Navbar() {
                       What We Offer{" "}
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       to="/testimonials"
                       className="border-bottom m-0"
@@ -88,7 +88,7 @@ export default function Navbar() {
                     >
                       Testimonials{" "}
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       to="/contact"
