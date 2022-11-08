@@ -8,29 +8,55 @@ const styles = {
     color: "white",
     fontWeight: "bold",
   },
-  span1: {
+  titleFont: {
+    fontFamily: "Reggae One",
+    fontDisplay: "cursive",
+    fontSize: "2.3vw",
     fontWeight: "bold",
-    fontSize: "1.2rem",
-    textShadow: "1px 1px 1px blue",
   },
-  span2: {
+  koreanTitle: {
+    fontFamily: "Nanum Brush Script",
+    fontDisplay: "cursive",
+    fontSize: "2.3vw",
     fontWeight: "bold",
-    textShadow: "1px 1px 1px blue",
   },
   content: {
     lineHeight: 1.5,
+    fontSize: "1.5vw",
+  },
+
+  subtitle: {
+    fontWeight: "bold",
+    fontSize: "2vw",
+    color: "#FF7377",
+    textShadow: "1px 1px 1px red",
+    fontFamily: "Reggae One",
+    fontDisplay: "cursive",
+  },
+  span: {
+    fontFamily: "Nanum Brush Script",
+    fontDisplay: "cursive",
+    fontWeight: "bold",
+    fontSize: "2.2vw",
+    color: "#FF7377",
+    textShadow: "1px 1px 1px red",
   },
 };
 export default function Tkd() {
   return (
     <div>
       <div className="card align-items-center border-0">
-        <h1 eventKey="values"> Tae Kwon Do(태권도)</h1>
+        <h3 eventKey="values" style={styles.titleFont}>
+          {" "}
+          Tae Kwon Do <span style={styles.koreanTitle}>(태권도)</span>
+        </h3>
         <div className="d-flex flex-column text-center" style={styles.card}>
           <div className="row align-items-center p-0">
             <div className="col p-3 mx-5">
               <h6>
-                <span style={styles.span1}>"The Way of the Hand and Foot"</span>
+                <span style={styles.subtitle}>
+                  "The Way of the Hand and Foot"
+                </span>
               </h6>
               <h6 className="my-3" style={styles.content}>
                 The name Taekwondo is derived from the Korean words:
@@ -45,7 +71,7 @@ export default function Tkd() {
                 discipline. It trains both the mind and the body in which great
                 emphasis is placed on the development of the trainee's moral
                 character while gainig{" "}
-                <span style={styles.span2}>self-defense</span> skills.
+                <span style={styles.span}> SELF-DEFENSE </span> skills.
               </h6>
               <h6 style={styles.content}>
                 MLMA offers competitive kicking and hand techniques throughout

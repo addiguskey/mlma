@@ -12,8 +12,8 @@ import { Link, useLocation } from "react-router-dom";
 
 const styles = {
   logo: {
-    maxHeight: "14rem",
-    maxWidth: "14rem",
+    maxHeight: "18vw",
+    maxWidth: "18vw",
     padding: "1rem",
   },
   span: {
@@ -115,15 +115,15 @@ export default function Navbar() {
         <div className="d-flex felx-column ">
           <div className="row text-center align-items-center mx-auto">
             <div className="col col-xl-6 col-lg-6 col-md-12 col-sm-12">
-              <h5>
+              <h6>
                 <span style={styles.span}>Fairview Heights, IL:</span> (618) 726
                 - 2228{" "}
-              </h5>
+              </h6>
             </div>{" "}
             <div className="col col-xl-6 col-lg-6 col-md-12 col-sm-12">
-              <h5>
+              <h6>
                 <span style={styles.span}>St. Louis, MO:</span> (314) 502 - 2037
-              </h5>
+              </h6>
             </div>
           </div>
         </div>

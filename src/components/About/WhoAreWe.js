@@ -7,12 +7,21 @@ const styles = {
     color: "white",
     fontWeight: "bold",
   },
+  korean: {
+    fontFamily: "Reggae One",
+    fontDisplay: "cursive",
+    fontSize: "2rem",
+    fontWeight: "bold",
+  },
 };
 export default function Values() {
   return (
     <div>
       <div className="card p-2 align-items-center border-0">
-        <h1 eventKey="values"> Family Martial Arts</h1>
+        <h1 eventKey="values" style={styles.korean}>
+          {" "}
+          Family Martial Arts
+        </h1>
         <div className="d-flex flex-column text-center" style={styles.card}>
           <div className="row align-items-center ">
             <div className="col p-2 mx-5">

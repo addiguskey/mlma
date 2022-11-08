@@ -4,24 +4,28 @@ import { Link, useLocation } from "react-router-dom";
 
 const styles = {
   foot: {
-    backgroundColor: "black",
-    color: "white",
+    backgroundColor: "white",
+    color: "gray",
+    fontSize: "0.8vw",
   },
   footImg: {
-    maxHeight: "50%",
-    maxWidth: "50%",
+    maxHeight: "25vw",
+    maxWidth: "auto",
   },
   info: {
     marginTop: "2rem",
+    fontSize: "1.5vw",
   },
   phoneNum: {
-    marginLeft: "50%",
+    fontSize: "1.5vw",
   },
   p: {
     marginTop: "1rem",
+    fontSize: "1.5vw",
   },
   bold: {
     fontWeight: "bold",
+    fontSize: "1.5vw",
   },
 };
 export default function Footer() {
@@ -64,7 +68,7 @@ export default function Footer() {
         >
           <p style={styles.p}>
             Website Designed and Built by addileeg©<br></br>
-            <span style={{ fontSize: "0.8rem" }}>addisonguskey@gmail.com</span>
+            <span style={{ fontSize: "1vw" }}>addisonguskey@gmail.com</span>
           </p>
         </div>
       </div>

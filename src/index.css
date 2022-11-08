@@ -64,6 +64,7 @@ code {
 
 .animated-icon1 span {
   background: black;
+  /* color: #e25b36 */
 }
 
 
@@ -105,4 +106,9 @@ code {
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+
+::placeholder {
+color: white;
+  opacity: 1;
 }

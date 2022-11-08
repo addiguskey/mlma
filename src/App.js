@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import WhatWeOffer from "./components/pages/WhatWeOffer";
-import Testimonials from "./components/Testimonials/Testimonials";
+// import Testimonials from "./components/Testimonials/Testimonials";
 
 export default function App() {
   return (

@@ -2,6 +2,7 @@ import React from "react";
 import { Tab, Tabs, Row, Col, Nav } from "react-bootstrap";
 import Sword from "../Programs/sword";
 import Tkd from "../Programs/tkd";
+import FreeClass2 from "../FreeClass2";
 
 const styles = {
   tab: {
@@ -27,6 +28,7 @@ export default function WhatWeOffer() {
           </Tab>
         </Tabs>
       </div>
+      <FreeClass2></FreeClass2>
     </div>
   );
 }

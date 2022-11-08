@@ -2,6 +2,13 @@ import React, { useRef, useState } from "react";
 // import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 
+const styles = {
+  inputForm: {
+    backgroundColor: "transparent",
+    border: "none",
+    borderBottom: "5px solid #771616",
+  },
+};
 export default function ContactForm(props) {
   const form = useRef();
 
@@ -42,25 +49,32 @@ export default function ContactForm(props) {
             id="contact-row"
           >
             <div className="col">
-              <input type="text" name="user_name" placeHolder="Your Name" />
+              <input
+                type="text"
+                name="user_name"
+                placeHolder="Your Name"
+                style={styles.inputForm}
+              />
             </div>
             <div className="col">
-              <input type="email" name="user_email" placeHolder="Your Email" />
+              <input
+                type="email"
+                name="user_email"
+                placeHolder="Your Email"
+                style={styles.inputForm}
+              />
             </div>
             <div className="col">
               <input
                 type="number"
                 name="user_number"
                 placeHolder="Phone Number"
+                style={styles.inputForm}
               />
               {/* <textarea name="message" id="msg-box" placeHolder="Message" /> */}
             </div>
             <div className="col">
-              <input
-                type="submit"
-                value="Send"
-                className="btn btn-outline-dark"
-              />
+              <input type="submit" value="Send" className="btn btn-light" />
             </div>
           </div>
         </div>
