@@ -2,14 +2,15 @@ import React from "react";
 import { Tab, Tabs, Row, Col, Nav } from "react-bootstrap";
 import Values from "../About/Values";
 import Instructors from "../About/Instructors";
-import Facility from "../About/Facility";
+// import Facility from "../About/Facility";
 import WhoAreWe from "../About/WhoAreWe";
 
-const styles = {
-  tab: {
-    color: "black",
-  },
-};
+// const styles = {
+//   tabs: {
+//     backgroundColor: "black",
+//   },
+// };
+
 export default function About() {
   return (
     <div>
@@ -17,9 +18,8 @@ export default function About() {
         <Tabs
           defaultActiveKey="values"
           id="justify-tab-example"
-          className="mb-3"
+          className=""
           justify
-          style={styles.tab}
         >
           <Tab eventKey="whoarewe" title="Who Are We">
             <WhoAreWe />
@@ -30,9 +30,9 @@ export default function About() {
           <Tab eventKey="instructors" title="Instructors">
             <Instructors />
           </Tab>
-          <Tab eventKey="facility" title="Facility">
+          {/* <Tab eventKey="facility" title="Facility">
             <Facility />
-          </Tab>
+          </Tab> */}
         </Tabs>
       </div>
     </div>

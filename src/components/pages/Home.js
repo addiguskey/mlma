@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProgramPics from "../Home/programspics";
 import MainHomeImg from "../Home/mainhomeimg";
 import FeatureCards from "../Home/FeatureCards";
-import Testimonials from "../Home/Testimonials/Testimonials";
+import Testimonials from "../Home/Testimonials";
 import FreeClass from "../Home/FreeClass";
 
 export default function Home() {

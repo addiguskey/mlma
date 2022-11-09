@@ -9,23 +9,24 @@ const styles = {
     fontSize: "0.8vw",
   },
   footImg: {
-    maxHeight: "25vw",
+    maxHeight: "13vw",
     maxWidth: "auto",
+    marginTop: "2rem",
   },
   info: {
     marginTop: "2rem",
-    fontSize: "1.5vw",
+    fontSize: "1vw",
   },
   phoneNum: {
-    fontSize: "1.5vw",
+    fontSize: "1.3vw",
   },
   p: {
     marginTop: "1rem",
-    fontSize: "1.5vw",
+    fontSize: "1vw",
   },
   bold: {
     fontWeight: "bold",
-    fontSize: "1.5vw",
+    fontSize: "1.3vw",
   },
 };
 export default function Footer() {
@@ -68,7 +69,7 @@ export default function Footer() {
         >
           <p style={styles.p}>
             Website Designed and Built by addileeg©<br></br>
-            <span style={{ fontSize: "1vw" }}>addisonguskey@gmail.com</span>
+            <span style={{ fontSize: "0.8vw" }}>addisonguskey@gmail.com</span>
           </p>
         </div>
       </div>

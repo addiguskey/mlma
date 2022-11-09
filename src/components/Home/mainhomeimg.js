@@ -16,8 +16,9 @@ const styles = {
     // padding: "1rem",
   },
   title: {
-    fontSize: "3vw",
+    fontSize: "3.2vw",
     whiteSpace: "nowrap",
+    fontWeight: "bold",
   },
   textshadow2: {
     color: "#FF7377",

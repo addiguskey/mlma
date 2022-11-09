@@ -3,15 +3,21 @@ import ContactForm from "./contactForm";
 import Card from "react-bootstrap/Card";
 
 const styles = {
-  red: {
-    backgroundColor: "#e25b36",
+  container: {
+    backgroundColor: "black",
     color: "white",
+  },
+  card: {
+    backgroundColor: "#708090",
+  },
+  title: {
+    fontWeight: "bold",
   },
   bluetext: {
     fontWeight: "bold",
-    color: "#BFD7ED",
+    color: "black",
     fontSize: "3.5vw",
-    textShadow: "2px 2px 2px blue",
+    textShadow: "2px 2px 2px #36454F",
   },
 };
 
@@ -28,21 +34,26 @@ export default function FreeClass2() {
   };
   return (
     <>
-      <Card className="p-2">
+      <div>
         <div
-          className=" d-flex flex-column p-4"
+          className=" d-flex flex-column p-3"
           id="formContainer"
-          style={styles.red}
+          style={styles.container}
         >
-          <h1 className="text-center p-4">
-            Claim Your <span style={styles.bluetext}>FREE CLASS</span> !
-          </h1>
-          <ContactForm
-            openMsgMadolFunc={openMsgMadolFunc}
-            checkIsErrorFunc={checkIsErrorFunc}
-          />
+          <Card style={styles.card} className="p-3 mb-3">
+            <h1 className="text-center p-3" style={styles.title}>
+              Claim Your <span style={styles.bluetext}> FREE CLASS</span> !
+            </h1>
+            <div className="p-2">
+              {" "}
+              <ContactForm
+                openMsgMadolFunc={openMsgMadolFunc}
+                checkIsErrorFunc={checkIsErrorFunc}
+              />
+            </div>
+          </Card>
         </div>
-      </Card>
+      </div>
     </>
   );
 }

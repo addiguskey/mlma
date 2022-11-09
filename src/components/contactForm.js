@@ -6,7 +6,8 @@ const styles = {
   inputForm: {
     backgroundColor: "transparent",
     border: "none",
-    borderBottom: "5px solid #771616",
+    // borderBottom: "5px solid #771616",
+    borderBottom: "5px solid #333333",
   },
 };
 export default function ContactForm(props) {

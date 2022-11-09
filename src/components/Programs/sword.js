@@ -10,23 +10,23 @@ const styles = {
   },
   content: {
     lineHeight: 1.5,
-    fontSize: "1.5vw",
+    // fontSize: "1.5vw",
   },
   titleFont: {
     fontFamily: "Reggae One",
     fontDisplay: "cursive",
-    fontSize: "2.3vw",
+    // fontSize: "2.3vw",
     fontWeight: "bold",
   },
   koreanTitle: {
     fontFamily: "Nanum Brush Script",
     fontDisplay: "cursive",
-    fontSize: "2.3vw",
+    // fontSize: "2.3vw",
     fontWeight: "bold",
   },
   subtitle: {
     fontWeight: "bold",
-    fontSize: "2vw",
+    // fontSize: "2vw",
     fontFamily: "Reggae One",
     fontDisplay: "cursive",
     textShadow: "1px 1px 1px blue",
@@ -34,11 +34,11 @@ const styles = {
   },
   span: {
     fontWeight: "bold",
-    color: "#BFD7ED",
     fontFamily: "Nanum Brush Script",
     fontDisplay: "cursive",
+    color: "#BFD7ED",
     textShadow: "1px 1px 1px blue",
-    fontSize: "2.1vw",
+    // fontSize: "2.1vw",
   },
 };
 export default function Sword() {
@@ -53,16 +53,16 @@ export default function Sword() {
         <div className="d-flex flex-column text-center" style={styles.card}>
           <div className="row align-items-center p-0">
             <div className="col p-3 mx-5">
-              <h6 style={styles.content} className="my-2">
+              <h3 style={styles.content} className="my-4">
                 <span style={styles.subtitle}>"The Way of the Sword"</span>
-              </h6>
+              </h3>
 
-              <h6 className="p-2">
+              <h5 className="p-2">
                 <span style={styles.span}>해동검도 </span>(Haedong Gumdo) is
                 traditional Korean sword based martial arts.
-              </h6>
+              </h5>
 
-              <h6 style={styles.content}>
+              <h5 style={styles.content}>
                 Beginner students will start with a wooden sword,{" "}
                 <span style={styles.span}>목검 </span>(Mok-Gum), from the first
                 day of practice. Intermediate students will be asked to begin
@@ -71,8 +71,8 @@ export default function Sword() {
                 the weight, balance, and danger of using the real sword,{" "}
                 <span style={styles.span}>진검</span>(Jin-Gum), after the 1st
                 degree of Black Belt: 1st Dan.
-              </h6>
-              <h6 className="my-4" style={styles.content}>
+              </h5>
+              <h5 className="my-4" style={styles.content}>
                 {" "}
                 Gumdo <span style={styles.span}>
                   IMPROVES CONCENTRATION
@@ -80,7 +80,7 @@ export default function Sword() {
                 and students are taught break fall & rolling techniques.
                 Students also learn and practice{" "}
                 <span style={styles.span2}>SELF-DICIPLINE</span> and respect.
-              </h6>
+              </h5>
             </div>
             <div className="col">
               <SwordPics></SwordPics>

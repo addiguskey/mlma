@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import ContactForm from "../contactForm";
 
 const styles = {
+  container: {
+    backgroundColor: "#e24d24",
+    color: "white",
+  },
   red: {
     backgroundColor: "#e24d24",
     color: "white",
+    fontWeight: "bold",
+    textShadow: "2px 2px 2px blue",
   },
 };
 
@@ -24,9 +30,9 @@ export default function FreeClass() {
       <div
         className=" d-flex flex-column p-4"
         id="formContainer"
-        style={styles.red}
+        style={styles.container}
       >
-        <h1 className="text-center p-4">
+        <h1 className="text-center p-4" style={styles.red}>
           Claim Your <span>FREE CLASS</span> !
         </h1>
         <ContactForm

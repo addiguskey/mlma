@@ -10,24 +10,24 @@ const styles = {
   korean: {
     fontFamily: "Reggae One",
     fontDisplay: "cursive",
-    fontSize: "2rem",
+    fontSize: "2vw",
     fontWeight: "bold",
   },
 };
 export default function Instructors() {
   return (
     <div>
-      <div className="card p-2 align-items-center border-0">
-        <h1 eventKey="values" style={styles.korean}>
+      <div className="card align-items-center border-0">
+        <h1 eventKey="values" style={styles.korean} className="p-3">
           {" "}
           Master Lim
         </h1>
 
         <div className="d-flex flex-column text-center" style={styles.card}>
           <div className="row align-items-center ">
-            <div className="col p-2 mx-5">
-              <h3>Master Lim</h3>
-              <p>
+            <div className="col p-2 mx-5 p-4">
+              <h2>Master Lim</h2>
+              <h5>
                 Master Nam Lim holds a 5th degree black belt in HaeDong Gumdo
                 (Korean Sword Martial Arts), a 4th degree black belt in
                 Taekwondo and is certified for instructing bare hand combat in
@@ -48,7 +48,7 @@ export default function Instructors() {
                 students become successful in their lives with good morals,
                 respect, positive attitude, a mindset to do their best on
                 everything, and satisfaction from the results of their efforts.
-              </p>
+              </h5>
             </div>
             <div className="col">
               <img src={valueImg}></img>

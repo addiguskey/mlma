@@ -16,7 +16,7 @@ const styles = {
   textshadow: {
     color: "white",
     fontWeight: "bold",
-    textShadow: "1px 1px 1px red",
+    textShadow: "2px 2px 2px red",
   },
   redtext: {
     color: "#e24d24",
@@ -33,7 +33,7 @@ export default function FeatureCards() {
     <>
       <div className="d-flex flex-column p-4" style={styles.blue}>
         <div className="row">
-          <div className="col p-1 my-5">
+          {/* <div className="col p-1 my-5">
             <Card
               className="text-center bg-transparent border-0"
               style={styles.dealsCards}
@@ -51,7 +51,7 @@ export default function FeatureCards() {
                 </Link>
               </Card.Body>
             </Card>
-          </div>
+          </div> */}
           <div className="col p-1">
             <Card className="text-center bg-transparent border-0 my-4">
               <h5 style={styles.redtext}>LIMITED TIME SPECIAL</h5>
@@ -68,7 +68,7 @@ export default function FeatureCards() {
               </Card.Body>
             </Card>
           </div>
-          <div className="col p-1 my-5">
+          {/* <div className="col p-1 my-5">
             <Card
               className="text-center bg-transparent border-0"
               style={styles.dealsCards}
@@ -86,7 +86,7 @@ export default function FeatureCards() {
                 </Link>
               </Card.Body>
             </Card>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

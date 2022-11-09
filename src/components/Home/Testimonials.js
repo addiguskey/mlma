@@ -3,25 +3,41 @@ import Carousel from "react-bootstrap/Carousel";
 const styles = {
   container: {
     backgroundColor: "black",
-    height: "30rem",
+    height: "auto",
     width: "100%",
     color: "white",
   },
   content: {
     marginLeft: "20rem",
     marginRight: "20rem",
+    fontSize: "2vw",
+  },
+  title: {
+    color: "gray",
+    fontWeight: "bold",
+    textShadow: "1px 1px 1px gray",
+    fontSize: "2.3vw",
+  },
+  name: {
+    fontWeight: "bold",
+    padding: "2rem",
+    textShadow: "1px 1px 1px gray",
+    fontSize: "2vw",
   },
 };
 export default function Testimonials() {
   return (
     <div style={styles.container} className="p-3 align-items-center">
-      <Carousel className="p-3 text-center">
-        <h5 style={{ color: "gray" }} className="my-3">
+      <div className="d-felx flex-column text-center">
+        <h5 style={styles.title} className="my-5">
           TESTIMONIALS
         </h5>
+      </div>
+
+      <Carousel className="p-3 text-center">
         <Carousel.Item>
-          <div className="text-center p-2 mx-5" style={styles.content}>
-            <p className="p-5">
+          <div className="text-center mx-5" style={styles.content}>
+            <p className="mx-5">
               When my son and I came into Master Lim's Martial Arts, we were
               only looking for a fun and active option to get some exercise. We
               found so much more. We found nurturing environment that teaches
@@ -33,15 +49,15 @@ export default function Testimonials() {
               family. My wife, son, daughter, and myself are proud to be
               students of Master Lim and part of the MLMA family.{" "}
             </p>
-            <p style={{ fontWeight: "bold" }}>DONNAVAN O.</p>
+            <p style={styles.name}>DONNAVAN O.</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
           <div
-            className="text-center p-4 mx-5 align-items-center"
+            className="text-center mx-5 align-items-center"
             style={styles.content}
           >
-            <p className="p-4" style={{ fontsize: "0.9rem" }}>
+            <p className="mx-5" style={{ fontsize: "0.9rem" }}>
               My experience with MLMA has been nothing but positive in many
               ways. I am more fit and alive than I was when I started and I have
               made numerous friends throughout MLMA. MLMA has helped me to be
@@ -57,27 +73,27 @@ export default function Testimonials() {
               mention. MLMA is not just a martial arts school, it is where I get
               to spend my free time with those I love.{" "}
             </p>
-            <p style={{ fontWeight: "bold" }}>CASEY K.</p>
+            <p style={styles.name}>CASEY K.</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
           <div
-            className="text-center p-2 mx-5 align-items-center"
+            className="text-center mx-5 align-items-center"
             style={styles.content}
           >
-            <p className="p-5">
-              What does the gym mean to me? It's a second home. It's been a new
-              start for me. Almost 3 years ago was when I started a new job and
-              found some free time. I also found a new family here. A lot of
-              wonderful people who will alternate from being wise teachers and
-              leaders, to pranksters and jokers, and to people kicking my butt
-              in sparring. The gym has been and will continue to be a second
-              home for me. I plan on continuing with the gym and moving towards
-              being an instructor. I may be a few ranks below other black belts,
-              but that does not mean I won't assist in whatever way I can to
-              help this gym grow and become stronger.{" "}
+            <p className="mx-5">
+              What does the gym mean to me? <br></br>It's a second home. It's
+              been a new start for me. Almost 3 years ago was when I started a
+              new job and found some free time. I also found a new family here.
+              A lot of wonderful people who will alternate from being wise
+              teachers and leaders, to pranksters and jokers, and to people
+              kicking my butt in sparring. The gym has been and will continue to
+              be a second home for me. I plan on continuing with the gym and
+              moving towards being an instructor. I may be a few ranks below
+              other black belts, but that does not mean I won't assist in
+              whatever way I can to help this gym grow and become stronger.{" "}
             </p>
-            <p style={{ fontWeight: "bold" }}>ANDREW F.</p>
+            <p style={styles.name}>ANDREW F.</p>
           </div>
         </Carousel.Item>
       </Carousel>

@@ -17,7 +17,7 @@ const styles = {
 export default function Facility() {
   return (
     <div>
-      <div className="card p-2 align-items-center border-0">
+      <div className="card align-items-center border-0">
         <h1 eventKey="values" style={styles.korean}>
           {" "}
           Our Facility
@@ -30,10 +30,10 @@ export default function Facility() {
                 facilities in the US with approximately 4500sq.ft including the
                 training space, and the lobby along with the waiting area.{" "}
                 <br></br>
-                <br></br>We provide a clean, well-organized, and pleasant
-                environment for students to train themselves. ​ We will have
-                many different opportunities to participate in competitions and
-                tournaments in the States and in overseas. <br></br>
+                <br></br>We provide a clean, organized, and pleasant environment
+                for students to train themselves. ​ We will have many different
+                opportunities to participate in competitions and tournaments in
+                the States and in overseas. <br></br>
                 <br></br>In addition, we are teaching Taekwondo, Kickboxing,
                 Self-Defense skills, Ground Fighting Techniques, Sword Skills
                 and other weapons, and Break falls and rolling techniques
