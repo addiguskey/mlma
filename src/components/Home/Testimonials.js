@@ -10,7 +10,7 @@ const styles = {
   content: {
     marginLeft: "20rem",
     marginRight: "20rem",
-    fontSize: "2vw",
+    fontSize: "1.2rem",
   },
   title: {
     color: "gray",
@@ -22,7 +22,7 @@ const styles = {
     fontWeight: "bold",
     padding: "2rem",
     textShadow: "1px 1px 1px gray",
-    fontSize: "2vw",
+    fontSize: "1.3vw",
   },
 };
 export default function Testimonials() {

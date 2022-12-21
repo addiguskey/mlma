@@ -38,14 +38,17 @@ const styles = {
     fontDisplay: "cursive",
     color: "#BFD7ED",
     textShadow: "1px 1px 1px blue",
-    // fontSize: "2.1vw",
+    fontSize: "2vw",
+  },
+  lessons: {
+    color: "gray",
   },
 };
 export default function Sword() {
   return (
     <div>
-      <div className="card  align-items-center border-0">
-        <h2 eventKey="values" style={styles.titleFont}>
+      <div className="text-center align-items-center border-0 bg-white ">
+        <h2 eventKey="values" style={styles.titleFont} className="p-4">
           {" "}
           Korean Sword Martial Arts{" "}
           <span style={styles.koreanTitle}>(해동검도)</span>
@@ -85,6 +88,9 @@ export default function Sword() {
             <div className="col">
               <SwordPics></SwordPics>
             </div>
+            <h4 className="text-center" style={styles.lessons}>
+              *Private Lessons Available by Appointment*
+            </h4>
           </div>
         </div>
       </div>

@@ -11,12 +11,12 @@ const styles = {
   koreanTitle: {
     fontFamily: "Nanum Brush Script",
     fontDisplay: "cursive",
-    fontSize: "2.7vw",
+    fontSize: "2.7rem",
     fontWeight: "bold",
   },
   span: {
     fontWeight: "bold",
-    fontSize: "1.9vw",
+    fontSize: "1.9rem",
     fontFamily: "Nanum Brush Script",
     fontDisplay: "cursive",
     color: "#708090",

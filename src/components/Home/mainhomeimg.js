@@ -1,5 +1,7 @@
 import React from "react";
 import homeimg from "../../assets/images/homeimg.png";
+import groupimg from "../../assets/images/groupimg.png";
+import groupimg2 from "../../assets/images/groupimg2.jpg";
 import fillerimg from "../../assets/images/filler.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -12,11 +14,12 @@ const styles = {
   },
   img: {
     maxHeight: "auto",
-    maxWidth: "130%",
-    // padding: "1rem",
+    maxWidth: "85rem",
+    filter: "grayscale(100%)",
+    filter: "brightness(0.4)",
   },
   title: {
-    fontSize: "3.2vw",
+    fontSize: "2.7vw",
     whiteSpace: "nowrap",
     fontWeight: "bold",
   },
@@ -24,7 +27,7 @@ const styles = {
     color: "#FF7377",
     fontWeight: "bold",
     textShadow: "1px 1px 1px #771616",
-    fontSize: "1.3vw",
+    fontSize: "1.8vw",
   },
   bluetext: {
     color: "#BFD7ED",
@@ -38,9 +41,9 @@ const styles = {
 export default function MainHomeImg() {
   return (
     <div>
-      <div className="nav d-flex flex-column" style={styles.black}>
+      <div className="nav d-flex flex-column rounded-top" style={styles.black}>
         <div className="container align-itmes-center text-center my-5">
-          <img src={homeimg} style={styles.img}></img>
+          <img src={groupimg2} style={styles.img}></img>
           <div className="home-title">
             <h6 style={styles.bluetext}>
               looking for SELF-DEFENSE, DICIPLICINE, and FUN FAMILY FITNESS?

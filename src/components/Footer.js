@@ -4,12 +4,11 @@ import { Link, useLocation } from "react-router-dom";
 
 const styles = {
   foot: {
-    backgroundColor: "white",
     color: "gray",
     fontSize: "0.8vw",
   },
   footImg: {
-    maxHeight: "13vw",
+    maxHeight: "11vw",
     maxWidth: "auto",
     marginTop: "2rem",
   },
@@ -32,7 +31,7 @@ const styles = {
 export default function Footer() {
   return (
     <div>
-      <div className="d-flex flex-column">
+      <div className="foot d-flex flex-column">
         <div className="row justify-content-between">
           <div className="d-flex col align-items-center mx-5">
             <Link to="/">

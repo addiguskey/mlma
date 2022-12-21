@@ -49,7 +49,7 @@ export default function ContactForm(props) {
             className="row align-items-center text-center mx-5"
             id="contact-row"
           >
-            <div className="col">
+            <div className="">
               <input
                 type="text"
                 name="user_name"
@@ -57,7 +57,7 @@ export default function ContactForm(props) {
                 style={styles.inputForm}
               />
             </div>
-            <div className="col">
+            <div className="">
               <input
                 type="email"
                 name="user_email"
@@ -65,16 +65,16 @@ export default function ContactForm(props) {
                 style={styles.inputForm}
               />
             </div>
-            <div className="col">
+            <div className="">
               <input
                 type="number"
                 name="user_number"
                 placeHolder="Phone Number"
                 style={styles.inputForm}
               />
-              {/* <textarea name="message" id="msg-box" placeHolder="Message" /> */}
             </div>
-            <div className="col">
+            <textarea name="message" id="msg-box" placeHolder="Message" />
+            <div className="">
               <input type="submit" value="Send" className="btn btn-light" />
             </div>
           </div>

@@ -16,7 +16,7 @@ const styles = {
   bluetext: {
     fontWeight: "bold",
     color: "black",
-    fontSize: "3.5vw",
+    fontSize: "2.7vw",
     textShadow: "2px 2px 2px #36454F",
   },
 };

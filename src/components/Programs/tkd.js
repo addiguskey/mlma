@@ -37,16 +37,19 @@ const styles = {
     fontFamily: "Nanum Brush Script",
     fontDisplay: "cursive",
     fontWeight: "bold",
-    // fontSize: "2.2vw",
+    fontSize: "2vw",
     color: "#FF7377",
     textShadow: "1px 1px 1px red",
+  },
+  lessons: {
+    color: "gray",
   },
 };
 export default function Tkd() {
   return (
     <div>
-      <div className="card align-items-center border-0">
-        <h3 eventKey="values" style={styles.titleFont}>
+      <div className=" text-center align-items-center border-0 bg-white">
+        <h3 eventKey="values" style={styles.titleFont} className="p-4">
           {" "}
           Tae Kwon Do <span style={styles.koreanTitle}>(태권도)</span>
         </h3>
@@ -81,6 +84,9 @@ export default function Tkd() {
             <div className="col">
               <TkdPics></TkdPics>
             </div>
+            <h4 className="text-center" style={styles.lessons}>
+              *Private Lessons Available by Appointment*
+            </h4>
           </div>
         </div>
       </div>

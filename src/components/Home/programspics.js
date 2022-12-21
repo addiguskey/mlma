@@ -11,7 +11,7 @@ const styles = {
     color: "white",
   },
   classImg: {
-    height: "55vw",
+    height: "40rem",
     width: "auto",
   },
   cardTitle: {
@@ -52,7 +52,7 @@ export default function ProgramPics() {
         style={styles.black}
       >
         <div className="row d-flex align-items-center mt-5">
-          <div className="col col-md-6 col-lg-6 col-sm-12">
+          <div className="col col-md-3 col-lg-3 col-sm-12">
             <div className="card bg-dark text-white">
               <Link to="/whatweoffer" className="btn btn-dark">
                 <img
@@ -73,7 +73,20 @@ export default function ProgramPics() {
               </div>
             </div>
           </div>
-          <div className="col col-md-6 col-lg-6 col-sm-12">
+          <div className="col col-md-3 col-lg-3 col-sm-12">
+            <div className="card bg-dark text-white">
+              <Link to="/whatweoffer" className="btn btn-dark">
+                <img
+                  className="card-img"
+                  src={fillerimg}
+                  style={styles.classImg}
+                />
+              </Link>
+
+              <div className="card-img-overlay"></div>
+            </div>
+          </div>
+          <div className="col col-md-3 col-lg-3 col-sm-12">
             <div className="card bg-dark text-white">
               <Link to="/whatweoffer" className="btn btn-dark">
                 <img
@@ -93,6 +106,19 @@ export default function ProgramPics() {
                   <span style={styles.sword}>(Korean Sword Martial Arts)</span>
                 </h5>
               </div>
+            </div>
+          </div>
+          <div className="col col-md-3 col-lg-3 col-sm-12">
+            <div className="card bg-dark text-white">
+              <Link to="/whatweoffer" className="btn btn-dark">
+                <img
+                  className="card-img"
+                  src={fillerimg}
+                  style={styles.classImg}
+                />
+              </Link>
+
+              <div className="card-img-overlay"></div>
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ import WhoAreWe from "../About/WhoAreWe";
 export default function About() {
   return (
     <div>
-      <div>
+      <div className="p-3">
         <Tabs
           defaultActiveKey="values"
           id="justify-tab-example"

@@ -7,14 +7,14 @@ import FreeClass from "../Home/FreeClass";
 
 export default function Home() {
   return (
-    <div>
+    <div className="p-3 mx-2 ">
       <MainHomeImg></MainHomeImg>
       <FreeClass></FreeClass>
-      <FeatureCards></FeatureCards>
       <ProgramPics></ProgramPics>
       <div>
         <Testimonials></Testimonials>
       </div>
+      <FeatureCards></FeatureCards>
     </div>
   );
 }

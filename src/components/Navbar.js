@@ -12,12 +12,13 @@ import { Link, useLocation } from "react-router-dom";
 
 const styles = {
   logo: {
-    maxHeight: "18vw",
-    maxWidth: "18vw",
+    maxHeight: "15rem",
+    maxWidth: "auto",
     padding: "1rem",
   },
   span: {
     fontWeight: "bold",
+    fontSize: "1.2rem",
   },
   li: {
     listStyle: "none",
@@ -51,7 +52,7 @@ export default function Navbar() {
           </MDBNavbar>
           <div className="d-flex flex-column align-items-end">
             <MDBCollapse show={showAnimated}>
-              <div className="bg-light shadow-3 p-4">
+              <div className="bg-transparent shadow-3 p-4">
                 <ul style={styles.li} id="navMenu">
                   <li>
                     <Link
@@ -115,15 +116,15 @@ export default function Navbar() {
         <div className="d-flex felx-column ">
           <div className="row text-center align-items-center mx-auto">
             <div className="col col-xl-6 col-lg-6 col-md-12 col-sm-12">
-              <h6>
+              <h4>
                 <span style={styles.span}>Fairview Heights, IL:</span> (618) 726
                 - 2228{" "}
-              </h6>
+              </h4>
             </div>{" "}
             <div className="col col-xl-6 col-lg-6 col-md-12 col-sm-12">
-              <h6>
+              <h4>
                 <span style={styles.span}>St. Louis, MO:</span> (314) 502 - 2037
-              </h6>
+              </h4>
             </div>
           </div>
         </div>

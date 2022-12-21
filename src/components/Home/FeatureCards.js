@@ -9,6 +9,7 @@ const styles = {
   blue: {
     backgroundColor: "#2b5f8d",
     color: "white",
+    borderRadiusBottom: "5mm",
   },
   span: {
     fontWeight: "bold",
@@ -17,11 +18,13 @@ const styles = {
     color: "white",
     fontWeight: "bold",
     textShadow: "2px 2px 2px red",
+    fontSize: "2.2rem",
   },
   redtext: {
     color: "#e24d24",
     fontWeight: "bold",
     textShadow: "1px 1px 1px black",
+    fontSize: "1.9rem",
   },
   testimonial: {
     fontSize: "0.9rem",
@@ -31,7 +34,10 @@ const styles = {
 export default function FeatureCards() {
   return (
     <>
-      <div className="d-flex flex-column p-4" style={styles.blue}>
+      <div
+        className="d-flex flex-column p-4 rounded-bottom"
+        style={styles.blue}
+      >
         <div className="row">
           {/* <div className="col p-1 my-5">
             <Card
@@ -56,9 +62,9 @@ export default function FeatureCards() {
             <Card className="text-center bg-transparent border-0 my-4">
               <h5 style={styles.redtext}>LIMITED TIME SPECIAL</h5>
               <Card.Body>
-                <h2 style={styles.textshadow}>
+                <h1 style={styles.textshadow}>
                   1st Month of UNLIMITED class for only $99!
-                </h2>
+                </h1>
                 <Card.Text>
                   Uniform <span style={styles.span}>INCLUDED</span>
                 </Card.Text>

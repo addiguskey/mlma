@@ -1,13 +1,15 @@
 import React from "react";
-import { Tab, Tabs, Row, Col, Nav } from "react-bootstrap";
+import { Tab, Tabs } from "react-bootstrap";
 import Sword from "../Programs/sword";
 import Tkd from "../Programs/tkd";
 import FreeClass2 from "../FreeClass2";
-import { Link } from "react-router-dom";
 
 const styles = {
+  container: {
+    borderRadius: "2mm",
+  },
   tab: {
-    color: "black",
+    backgroundColor: "rgba(42, 42, 42, 0.000)",
   },
   lessons: {
     backgroundColor: "black",
@@ -18,11 +20,11 @@ const styles = {
 export default function WhatWeOffer() {
   return (
     <div>
-      <div>
+      <div className="p-4">
         <Tabs
           defaultActiveKey="values"
           id="justify-tab-example"
-          className="mb-3"
+          className=""
           justify
           style={styles.tab}
         >
@@ -34,13 +36,8 @@ export default function WhatWeOffer() {
             <Tkd />
           </Tab>
         </Tabs>
-        <div style={styles.lessons}>
-          <h6 className="text-center">
-            *Private Lessons Available by Appointment*
-          </h6>
-        </div>
+        <FreeClass2></FreeClass2>
       </div>
-      <FreeClass2></FreeClass2>
     </div>
   );
 }

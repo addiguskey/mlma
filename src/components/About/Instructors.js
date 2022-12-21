@@ -10,7 +10,7 @@ const styles = {
   korean: {
     fontFamily: "Reggae One",
     fontDisplay: "cursive",
-    fontSize: "2vw",
+    fontSize: "2rem",
     fontWeight: "bold",
   },
 };
