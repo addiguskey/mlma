@@ -5,11 +5,11 @@ import Instructors from "../About/Instructors";
 // import Facility from "../About/Facility";
 import WhoAreWe from "../About/WhoAreWe";
 
-// const styles = {
-//   tabs: {
-//     backgroundColor: "black",
-//   },
-// };
+const styles = {
+  tab: {
+    backgroundColor: "rgba(42, 42, 42, 0.000)",
+  },
+};
 
 export default function About() {
   return (
@@ -17,7 +17,8 @@ export default function About() {
       <div className="p-3">
         <Tabs
           defaultActiveKey="values"
-          id="justify-tab-example"
+          style={styles.tab}
+          id="justify-tab"
           className=""
           justify
         >

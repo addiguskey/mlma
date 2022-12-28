@@ -222,3 +222,10 @@ color: white;
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
+
+.programhome {
+  filter: grayscale(100%)
+}
+.programhome:hover {
+  filter: grayscale(0%)
+}

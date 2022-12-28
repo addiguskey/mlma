@@ -7,7 +7,8 @@ const styles = {
     backgroundColor: "transparent",
     border: "none",
     // borderBottom: "5px solid #771616",
-    borderBottom: "3px solid #D3D3D3",
+    borderBottom: "4px solid #D3D3D3",
+    fontSize: "1.3rem",
   },
 };
 export default function ContactForm(props) {
@@ -45,10 +46,7 @@ export default function ContactForm(props) {
     <div>
       <form ref={form} onSubmit={sendEmail}>
         <div className="d-flex flex-column ">
-          <div
-            className="row align-items-center text-center mx-5"
-            id="contact-row"
-          >
+          <div className="row align-items-center text-center" id="contact-row">
             <div className="col">
               <input
                 type="text"

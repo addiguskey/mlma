@@ -11,7 +11,7 @@ const styles = {
     color: "white",
     fontWeight: "bold",
     textShadow: "2px 2px 2px blue",
-    fontSize: "2.5rem",
+    fontSize: "3.2rem",
   },
 };
 

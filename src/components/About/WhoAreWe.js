@@ -13,6 +13,10 @@ const styles = {
     fontSize: "2rem",
     fontWeight: "bold",
   },
+  content: {
+    lineHeight: 2,
+    fontSize: "1.5rem",
+  },
 };
 export default function Values() {
   return (
@@ -24,35 +28,38 @@ export default function Values() {
         </h1>
         <div className="d-flex flex-column text-center" style={styles.card}>
           <div className="row align-items-center ">
-            <div className="col p-2 mx-5 p-4">
-              <h5>
+            <div className="col mx-5 p-5">
+              <h5 style={styles.content}>
                 We are a family martial arts school that teaches Korean Style
                 Martial Arts with an emphasis on character development, fitness
                 and self-defense. We offer programs for children, teens, adults,
                 and seniors.
               </h5>
-              <h5>
-                Master Lim’s Martial Arts offers Tae Kwon Do, Self-Defense,
-                Sword Skills, break falls, and hand to hand combat in a facility
-                at approximately 4500sqft, being one of the largest Martial Arts
+              <br />
+              <h5 style={styles.content}>
+                Master Lim’s Martial Arts offers Tae Kwon Do, Sword Skills,
+                break falls, and hand to hand combat in a facility at
+                approximately 4500sq ft, being one of the largest Martial Arts
                 faciliries in the US. Our facility includes the training space,
                 lobby, along with the waiting area.
               </h5>
-              <h5>
+              <br />
+              <h5 style={styles.content}>
                 Our students will learn respect and good manners,
                 self-discipline, a positive attitude, responsibility,
                 concentration, self-esteem, flexibility, endurance, and
                 strength.{" "}
               </h5>
-              <h5>
-                Martial Arts is beneficial for relieving stress and tension and
-                it also enhances overall wellness and will help with weight
-                control.
+              <h5 style={styles.content}>
+                Martial Arts is beneficial for relieving stress and tension. It
+                also enhances overall wellness.
               </h5>
-              <h5>
+              <h5 style={styles.content}>
                 We are positive, family-friendly environment that accommodates
                 and welcomes all ages.
               </h5>
+              <br />
+              <h5 style={styles.content}> Can't wait for you to join us!</h5>
             </div>
             <div className="col">
               <img src={valueImg}></img>

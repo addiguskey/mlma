@@ -13,6 +13,7 @@ const styles = {
     fontDisplay: "cursive",
     fontSize: "2.7rem",
     fontWeight: "bold",
+    backgroundColor: "white",
   },
   span: {
     fontWeight: "bold",
@@ -25,19 +26,18 @@ const styles = {
 export default function Values() {
   return (
     <div>
-      <div className="card  align-items-center border-0">
+      <div className="text-center  align-items-center border-0">
         <h1 eventKey="values" style={styles.koreanTitle} className="p-3">
           {" "}
           충효예의
         </h1>
         <div className="d-flex flex-column text-center" style={styles.card}>
           <div className="row align-items-center ">
-            <div className="col p-4 mx-5">
+            <div className="col mx-5">
               <h5>
-                Master Lim's Martial Arts Academy is OUR facility where students
-                learn patriotism, parental respect and obedience, righteousness
-                and loyalty. We are learning and training ourselves from a
-                family like environment.
+                Master Lim's Martial Arts Academy is where students learn
+                patriotism, respect, obedience, righteousness and loyalty. We
+                learn and train in a family like environment.
               </h5>
               <div className="d-flex flex-column text-left">
                 <h5>
@@ -47,7 +47,7 @@ export default function Values() {
                 </h5>
                 <h5>
                   <span style={styles.span}>효 (Hyo) </span>: Love, care, and
-                  respect our parents and grand parents.
+                  respect our parents and grandparents.
                 </h5>
                 <h5>
                   <span style={styles.span}>예 (Ye)</span>: Practice respect and

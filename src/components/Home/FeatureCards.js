@@ -18,7 +18,7 @@ const styles = {
     color: "white",
     fontWeight: "bold",
     textShadow: "2px 2px 2px red",
-    fontSize: "2.2rem",
+    fontSize: "2.5rem",
   },
   redtext: {
     color: "#e24d24",
