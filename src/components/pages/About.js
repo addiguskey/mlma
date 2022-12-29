@@ -4,6 +4,7 @@ import Values from "../About/Values";
 import Instructors from "../About/Instructors";
 // import Facility from "../About/Facility";
 import WhoAreWe from "../About/WhoAreWe";
+import FreeClass2 from "../FreeClass2";
 
 const styles = {
   tab: {
@@ -14,7 +15,7 @@ const styles = {
 export default function About() {
   return (
     <div>
-      <div className="p-3">
+      <div className="p-2">
         <Tabs
           defaultActiveKey="values"
           style={styles.tab}
@@ -35,6 +36,7 @@ export default function About() {
             <Facility />
           </Tab> */}
         </Tabs>
+        {/* <FreeClass2></FreeClass2> */}
       </div>
     </div>
   );

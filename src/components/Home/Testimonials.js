@@ -16,13 +16,13 @@ const styles = {
     color: "gray",
     fontWeight: "bold",
     textShadow: "1px 1px 1px gray",
-    fontSize: "2.3vw",
+    fontSize: "2.2rem",
   },
   name: {
     fontWeight: "bold",
     padding: "2rem",
     textShadow: "1px 1px 1px gray",
-    fontSize: "1.3vw",
+    fontSize: "1.3rem",
   },
 };
 export default function Testimonials() {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ContactForm from "./contactForm";
+import ContactForm from "./Contact/contactForm";
 import Card from "react-bootstrap/Card";
 
 const styles = {
@@ -13,10 +13,10 @@ const styles = {
   title: {
     fontWeight: "bold",
   },
-  bluetext: {
+  freeclass: {
     fontWeight: "bold",
     color: "black",
-    fontSize: "2.7vw",
+    fontSize: "2.6rem",
     textShadow: "2px 2px 2px #36454F",
   },
 };
@@ -42,7 +42,7 @@ export default function FreeClass2() {
         >
           <Card style={styles.card} className="p-3 mb-3">
             <h1 className="text-center p-3" style={styles.title}>
-              Claim Your <span style={styles.bluetext}> FREE CLASS</span> !
+              Claim Your <span style={styles.freeclass}> FREE CLASS</span> !
             </h1>
             <div className="p-2">
               {" "}

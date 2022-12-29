@@ -7,7 +7,10 @@ const styles = {
     backgroundColor: "transparent",
     border: "none",
     // borderBottom: "5px solid #771616",
-    borderBottom: "3px solid #D3D3D3",
+    borderBottom: "4px solid #D3D3D3",
+    lineHeight: 1.5,
+    fontSize: "1.2rem",
+    color: "white",
   },
 };
 export default function ContactForm(props) {
@@ -44,20 +47,20 @@ export default function ContactForm(props) {
   return (
     <div>
       <form ref={form} onSubmit={sendEmail}>
-        <div className="d-flex flex-column ">
+        <div className="d-block flex-column ">
           <div
-            className="row align-items-center text-center mx-5"
+            className="row align-items-center text-center mx-5 p-3"
             id="contact-row"
           >
-            <div className="">
+            <div className="row ">
               <input
-                type="text"
+                type=""
                 name="user_name"
                 placeHolder="Your Name"
                 style={styles.inputForm}
               />
             </div>
-            <div className="">
+            <div className="row">
               <input
                 type="email"
                 name="user_email"
@@ -65,15 +68,21 @@ export default function ContactForm(props) {
                 style={styles.inputForm}
               />
             </div>
-            <div className="">
+            <div className="row">
               <input
-                type="number"
+                type="text"
                 name="user_number"
                 placeHolder="Phone Number"
                 style={styles.inputForm}
               />
             </div>
-            <textarea name="message" id="msg-box" placeHolder="Message" />
+
+            <textarea
+              name="message"
+              id="msg-box"
+              placeHolder="Message"
+              text-dark
+            />
             <div className="">
               <input type="submit" value="Send" className="btn btn-light" />
             </div>

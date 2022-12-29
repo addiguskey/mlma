@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ContactForm from "../contactForm";
+import ContactForm from "../Contact/contactForm";
 
 const styles = {
   container: {

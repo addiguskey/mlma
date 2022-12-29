@@ -1,5 +1,7 @@
 import React from "react";
 import valueImg from "../../assets/images/filler.png";
+import groupimg3 from "../../assets/images/groupimg3.jpeg";
+import FreeClass2 from "../FreeClass2";
 
 const styles = {
   card: {
@@ -16,6 +18,11 @@ const styles = {
   content: {
     lineHeight: 2,
     fontSize: "1.5rem",
+  },
+  span: {
+    lineHeight: 2,
+    fontSize: "1.7rem",
+    fontWeight: "bold",
   },
 };
 export default function Values() {
@@ -59,14 +66,15 @@ export default function Values() {
                 and welcomes all ages.
               </h5>
               <br />
-              <h5 style={styles.content}> Can't wait for you to join us!</h5>
+              <h2 style={styles.span}>We are a martial arts family!</h2>
             </div>
             <div className="col">
-              <img src={valueImg}></img>
+              <img src={groupimg3} className="aboutimg"></img>
             </div>
           </div>
         </div>
       </div>
+      <FreeClass2></FreeClass2>
     </div>
   );
 }

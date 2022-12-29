@@ -2,6 +2,7 @@ import React from "react";
 import homeimg from "../../assets/images/homeimg.png";
 import groupimg from "../../assets/images/groupimg.png";
 import groupimg2 from "../../assets/images/groupimg2.jpg";
+import groupimg3 from "../../assets/images/groupimg3.jpeg";
 import fillerimg from "../../assets/images/filler.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -24,18 +25,19 @@ const styles = {
     fontWeight: "bold",
   },
   textshadow2: {
-    color: "#FF7377",
+    color: "#90c0ec",
     fontWeight: "bold",
-    textShadow: "1px 1px 1px #771616",
+    textShadow: "1px 1px 1px #2b5f8d",
     fontSize: "1.8vw",
   },
   bluetext: {
-    color: "#BFD7ED",
+    color: "#90c0ec",
     fontWeight: "bold",
     textShadow: "1px 1px 1px #2b5f8d",
     fontSize: "1.3vw",
     whiteSpace: "nowrap",
   },
+  // red text: #FF7377, shadow:771616
 };
 
 export default function MainHomeImg() {

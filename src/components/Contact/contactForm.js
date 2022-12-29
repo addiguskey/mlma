@@ -6,9 +6,9 @@ const styles = {
   inputForm: {
     backgroundColor: "transparent",
     border: "none",
-    // borderBottom: "5px solid #771616",
     borderBottom: "4px solid #D3D3D3",
     fontSize: "1.3rem",
+    color: "white",
   },
 };
 export default function ContactForm(props) {
@@ -65,7 +65,7 @@ export default function ContactForm(props) {
             </div>
             <div className="col">
               <input
-                type="number"
+                type="text"
                 name="user_number"
                 placeHolder="Phone Number"
                 style={styles.inputForm}
