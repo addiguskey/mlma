@@ -1,31 +1,24 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
 import { Link, useLocation } from "react-router-dom";
+import info from "../assets/images/info.png";
 
 const styles = {
   foot: {
     color: "gray",
-    fontSize: "0.8vw",
+    fontSize: "1rem",
   },
   footImg: {
-    maxHeight: "11vw",
+    maxHeight: "12rem",
     maxWidth: "auto",
     marginTop: "2rem",
+    marginLeft: "5vw",
   },
   info: {
     marginTop: "2rem",
-    fontSize: "1vw",
-  },
-  phoneNum: {
-    fontSize: "1.3vw",
-  },
-  p: {
-    marginTop: "1rem",
-    fontSize: "1vw",
-  },
-  bold: {
-    fontWeight: "bold",
-    fontSize: "1.3vw",
+    height: "7rem",
+    width: "auto",
+    marginRight: "7vw",
   },
 };
 export default function Footer() {
@@ -52,13 +45,7 @@ export default function Footer() {
             className="d-flex col align-items-center justify-content-end mx-4
           "
           >
-            <h6 style={styles.info}>
-              <span style={styles.phoneNum}>(618) 726 - 2228</span>
-              <br></br>
-              <span style={styles.bold}>
-                1931 W. US Highway 50, Fairview Heights, IL, 62208
-              </span>
-            </h6>
+            <img src={info} alt="" style={styles.info} />
           </div>
         </div>
 
@@ -68,7 +55,7 @@ export default function Footer() {
         >
           <p style={styles.p}>
             Website Designed and Built by addileeg©<br></br>
-            <span style={{ fontSize: "0.8vw" }}>addisonguskey@gmail.com</span>
+            <span style={{ fontSize: "1rem" }}>addisonguskey@gmail.com</span>
           </p>
         </div>
       </div>

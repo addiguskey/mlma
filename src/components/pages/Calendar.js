@@ -18,7 +18,7 @@ const styles = {
     marginLeft: "-8rem",
   },
   bluebubble: {
-    width: "25rem",
+    width: "28rem",
     height: "auto",
     marginTop: "15rem",
     marginLeft: "8rem",
