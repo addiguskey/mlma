@@ -55,7 +55,7 @@ export default function ProgramPics() {
         id="programPics"
         style={styles.black}
       >
-        <div className="row d-flex align-items-center mt-5">
+        <div className="programpics row d-flex align-items-center text-centermt-5 mx-2 justify-content-around justify-content-between">
           <div className="col col-md-6 col-lg-6 col-xl-3 col-sm-12">
             {/* <div className="card bg-dark text-white"> */}
             <a href="/whatweoffer" className="programhome">

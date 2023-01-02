@@ -20,7 +20,7 @@ import group18 from "../../assets/images/group/group18.png";
 
 const styles = {
   pic: {
-    width: "40rem",
+    width: "40vw",
     height: "auto",
   },
 };

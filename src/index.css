@@ -238,17 +238,165 @@ color: white;
   filter: grayscale(0%);
    color: #90c0ec;
 }
-
-
-@media screen and (max-width: 1967px) {
-  .redbubble   {
-    width: "1rem";
-    height: "auto";
+/* MEDIA QUERY FOR HOMEPG MAIN IMG */
+@media screen and (max-width: 2158px) {
+  .homeimg {
+    margin-left: -12rem !important;
   }
 }
-@media screen and (max-width: 555px) {
-
+@media screen and (max-width: 1981px) {
+  .homeimg {
+    margin-left: -9rem !important;
+  }
 }
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 1882px) {
+  .homeimg {
+    margin-left: -6rem !important;
+  }
+}
+@media screen and (max-width: 1755px) {
+  .homeimg {
+    margin-left: -3rem !important;
+  }
+}
+@media screen and (max-width: 1462px) {
+  .homeimg {
+    margin-left: 0rem !important;
+  }
+}
 
+/* MEDIA QUERY FOR CLASS IMGES */
+@media screen and (max-width: 1190px) {
+  .programpics {
+    margin-left: 6rem !important;
+  }
+}
+@media screen and (max-width: 1052px) {
+  .programpics {
+    margin-left: 3rem !important;
+  }
+}
+@media screen and (max-width: 971px) {
+  .programpics {
+    margin-left: 1.5rem !important;
+  }
+}
+@media screen and (max-width: 834px) {
+  .programpics {
+    margin-left: -1rem !important;
+  }
+}
+@media screen and (max-width: 730px) {
+  .programpics {
+    margin-left: 8rem !important;
+  }
+}
+@media screen and (max-width: 663px) {
+  .programpics {
+    margin-left: 6rem !important;
+  }
+}
+@media screen and (max-width: 603px) {
+  .programpics {
+    margin-left: 4rem !important;
+  }
+}
+@media screen and (max-width: 536px) {
+  .programpics {
+    margin-left: 2rem !important;
+  }
+}
+@media screen and (max-width: 466px) {
+  .programpics {
+    margin-left: 0rem !important;
+  }
+}
+
+/* MEDIA QUERY FOR BUBBLES IN CALENDAR */
+@media screen and (max-width: 2440px) {
+  .redbubble{
+    width: 30rem !important;
+    height: auto
+  }
+     .bluebubble {
+       width: 25rem !important;
+       height: auto;
+       margin-right: 5rem;
+     }
+}
+@media screen and (max-width: 2285px) {
+  .redbubble {
+    width: 25rem !important;
+    height: auto
+    }
+  .bluebubble {
+    width: 20rem !important;
+    height: auto;
+    margin-right: 5rem;
+    }
+}
+@media screen and (max-width: 2229px) {
+  .redbubble {
+    width: 20rem !important;
+    height: auto
+    }
+    .bluebubble {
+      margin-right: 5rem;
+    }
+                
+}
+@media screen and (max-width: 2185px) {
+  .redbubble {
+    margin-right: -10rem;
+    }
+  .bluebubble {
+    margin-right: 5rem;
+   }
+}
+/* MEDIA QUERY FOR CALENDAR */
+@media screen and (max-width: 2650px) {
+  .cal {
+    margin-left: -12rem !important;
+  }
+}
+@media screen and (max-width: 1850px) {
+  .cal {
+    margin-left: -17rem !important;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .cal {
+    margin-left: -20rem !important;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .cal {
+    margin-left: -23rem !important;
+  }
+}
+@media screen and (max-width: 2003px) {
+  .redbubble {
+    margin-right: -25rem;
+    }
+   .bluebubble {
+      margin-right: 8rem;
+    }
+}
+@media screen and (max-width: 1781px) {
+  .redbubble {
+    margin-right: -30rem;
+    }
+            
+}
+@media screen and (max-width: 1777px) {
+  .bluebubble {
+      margin-right: 25rem ;
+    }
+            
+}
+@media screen and (max-width: 1760px) {
+  .redbubble, .bluebubble{
+      display: none !important;
+  
+    }
 }

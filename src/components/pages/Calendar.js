@@ -8,7 +8,7 @@ const styles = {
   cal: {
     width: "70rem",
     height: "auto",
-    marginLeft: "-10.5rem",
+    marginLeft: "-10rem",
     borderRadius: "5mm",
   },
   redbubble: {
@@ -35,10 +35,10 @@ export default function Calendar() {
               alt=""
               style={styles.bluebubble}
               className="bluebubble"
-            />
+            ></img>
           </div>
-          <div className="col-sm-4 col-md-4 col-l-4 col-xl-4">
-            <img src={jan} alt="" style={styles.cal} />
+          <div className="col-sm-4 col-md-4 col-l-4 col-xl-4 text-center align-items-center">
+            <img src={jan} alt="" style={styles.cal} className="cal" />
           </div>
           <div className="col-sm-4 col-md-4 col-l-4 col-xl-4">
             <img
@@ -46,7 +46,7 @@ export default function Calendar() {
               alt=""
               style={styles.redbubble}
               className="redbubble"
-            />
+            ></img>
           </div>
         </div>
       </div>

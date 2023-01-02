@@ -15,9 +15,10 @@ const styles = {
   },
   img: {
     maxHeight: "auto",
-    maxWidth: "85rem",
+    maxWidth: "80vw",
     filter: "grayscale(100%)",
     filter: "brightness(0.4)",
+    marginLeft: "-15rem",
   },
   title: {
     fontSize: "2.7vw",
@@ -45,7 +46,7 @@ export default function MainHomeImg() {
     <div>
       <div className="nav d-flex flex-column rounded-top" style={styles.black}>
         <div className="container align-itmes-center text-center my-5">
-          <img src={groupimg2} style={styles.img}></img>
+          <img src={groupimg2} style={styles.img} className="homeimg"></img>
           <div className="home-title">
             <h6 style={styles.bluetext}>
               looking for SELF-DEFENSE, DICIPLICINE, and FUN FAMILY FITNESS?
