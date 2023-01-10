@@ -5,7 +5,7 @@
 This is a solo freelance project <br/>
 In the new MLMA website, you can request a free class directly through the site. This new feature was added to increase customer acquisition for a simpler consumer to business connection.
 
-# live link
+# Live Link
 
 `TBD`
 
