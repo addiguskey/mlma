@@ -12,7 +12,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const styles = {
   logo: {
-    maxHeight: "17rem",
+    maxHeight: "15rem",
     maxWidth: "auto",
     padding: "1rem",
   },

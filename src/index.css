@@ -238,6 +238,7 @@ color: white;
   filter: grayscale(0%);
    color: #90c0ec;
 }
+
 /* MEDIA QUERY FOR HOMEPG MAIN IMG */
 @media screen and (max-width: 2158px) {
   .homeimg {
@@ -264,11 +265,21 @@ color: white;
     margin-left: 0rem !important;
   }
 }
+@media screen and (max-width: 1230px) {
+  .homeimg {
+    margin-left: -9rem !important;
+  }
+}
 
 /* MEDIA QUERY FOR CLASS IMGES */
 @media screen and (max-width: 1190px) {
   .programpics {
     margin-left: 6rem !important;
+  }
+}
+@media screen and (max-width: 1321px) {
+  .programpics {
+    margin-left: -2rem !important;
   }
 }
 @media screen and (max-width: 1052px) {
@@ -361,7 +372,7 @@ color: white;
 }
 @media screen and (max-width: 1850px) {
   .cal {
-    margin-left: -17rem !important;
+    margin-right: -10rem !important;
   }
 }
 @media screen and (max-width: 1550px) {

@@ -3,7 +3,7 @@ import homeimg from "../../assets/images/homeimg.png";
 import groupimg from "../../assets/images/groupimg.png";
 import groupimg2 from "../../assets/images/groupimg2.jpg";
 import groupimg3 from "../../assets/images/groupimg3.jpeg";
-import fillerimg from "../../assets/images/filler.png";
+import fillerimg from "../../assets/images/homeimg.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
@@ -18,7 +18,7 @@ const styles = {
     maxWidth: "80vw",
     filter: "grayscale(100%)",
     filter: "brightness(0.4)",
-    marginLeft: "-15rem",
+    marginRight: "-10rem",
   },
   title: {
     fontSize: "2.7vw",
@@ -46,7 +46,12 @@ export default function MainHomeImg() {
     <div>
       <div className="nav d-flex flex-column rounded-top" style={styles.black}>
         <div className="container align-itmes-center text-center my-5">
-          <img src={groupimg2} style={styles.img} className="homeimg"></img>
+          <img
+            src={groupimg2}
+            // src={fillerimg}
+            style={styles.img}
+            className="homeimg"
+          ></img>
           <div className="home-title">
             <h6 style={styles.bluetext}>
               looking for SELF-DEFENSE, DICIPLICINE, and FUN FAMILY FITNESS?
